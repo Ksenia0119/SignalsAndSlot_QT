@@ -10,9 +10,9 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
      // Подключаем к кнопкам слоты
-    // Подключение сигнала от кнопки calculateButton к слоту calculate
+    // Подключение сигнала от кнопки calculateButton к слоту calculate объекта MainWindow
     connect(ui->calculateButton, SIGNAL(clicked()), this, SLOT(calculate()));
-    // Подключение сигнала от кнопки clearButton к слоту clear
+    // Подключение сигнала от кнопки clearButton к слоту clear объекта MainWindow
     connect(ui->clearButton, SIGNAL(clicked()), this, SLOT(clear()));
 
 
